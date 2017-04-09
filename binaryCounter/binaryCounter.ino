@@ -10,6 +10,7 @@ void setup() {
     pinMode(led[i], OUTPUT);
   }
   pinMode(button, INPUT);
+  Serial.begin(9600);
 }
 
 void loop() {
@@ -35,5 +36,6 @@ void loop() {
          digitalWrite(led[i], LOW);
        }
    }
-  
+   Serial.println(counter);
+   Serial.println(bin)  ;
 }
